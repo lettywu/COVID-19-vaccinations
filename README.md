@@ -29,7 +29,12 @@ Two or more patients with COVID-19 are discovered to be linked, and the linkage 
 
 # Data-Acquisition
 [(Back to top)](#table-of-contents)
+The Primary Source for Covid Data comes from California CoVid website. The following data sets were used:
+(1.) **Hospitals_by_county.csv**: This file has a information by County on confirmed and suspected Covid Patients, along with total hospital beds and ICU beds. The data will be used to track County wise hospital capacity.
 
+(2.)**Cases_with_mask_use.csv**: 
+
+(3.)
 
 
 # Data-Cleaning
@@ -58,4 +63,6 @@ Two or more patients with COVID-19 are discovered to be linked, and the linkage 
 
 Citations:
 https://covid.cdc.gov/covid-data-tracker/#vaccinations
+https://public.tableau.com/views/COVID-19CasesDashboard_15931020425010/Cases?:embed=y&:showVizHome=no
+
   
