@@ -19,7 +19,12 @@ Problem Statement:
 
 # Problem-Statement
 [(Back to top)](#table-of-contents)
+Currently the COVID-19 vaccines developed by Moderna and Pfizer are being distributed based purely on population which is a huge problem in cases where an outbreak happens. As the COVID-19 vaccine comes in 2 doses that have to be taken 3 weeks apart, we would like to predict areas that are most likely to have an outbreak in 3 weeks time and allocate more vaccines accordingly. By doing this, we can reduce the spread more effectively rather than assuming that outbreaks are likely to only happen in areas of high population. 
 
+Definitions for COVID-19 outbreaks are relative to the local context. A working definition of “outbreak” is recommended for planning investigations. A recommended definition is a situation that is consistent with either of two sets of criteria:
+During (and because of) a case investigation and contact tracing, two or more contacts are identified as having active COVID-19, regardless of their assigned priority.
+OR
+Two or more patients with COVID-19 are discovered to be linked, and the linkage is established outside of a case investigation and contact tracing (e.g., two patients who received a diagnosis of COVID-19 are found to work in the same office, and only one or neither of the them was listed as a contact to the other).
 
 
 # Data-Acquisition
@@ -52,5 +57,5 @@ Problem Statement:
 [(Back to top)](#table-of-contents)
 
 Citations:
-
+https://covid.cdc.gov/covid-data-tracker/#vaccinations
   
