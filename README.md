@@ -30,6 +30,7 @@ Two or more patients with COVID-19 are discovered to be linked, and the linkage 
 # Data-Acquisition
 [(Back to top)](#table-of-contents)
 The Primary Source for Covid Data comes from California CoVid website. The following data sets were used:
+
 (1.) **Hospitals_by_county.csv**: This file has a information by County on confirmed and suspected Covid Patients, along with total hospital beds and ICU beds. The data will be used to track County wise hospital capacity.
 
 (2.)**Cases_with_mask_use.csv**: 
