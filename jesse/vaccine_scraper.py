@@ -3,11 +3,12 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep, time
 
 # initialize what site we want to scrape
 home_url = 'https://covid.cdc.gov/covid-data-tracker/#vaccinations'
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(ChromeDriverManager().install())
 
 # open browser and get html code 
 browser.get(home_url)
