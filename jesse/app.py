@@ -5,14 +5,14 @@ import pandas as pd
 from flask import Flask, request, Response, render_template, jsonify
 
 # initialize the flask app
-app = Flask('myApp')
+app = Flask('BestVaccDist')
 
 # route 1: hello world
 # return a simple string
 @app.route('/')
 # create the controller
 def home():
-    return render_template('main.html')
+    return render_template('index.html')
 
 # route 5: accept the form submission and do something fancy with it
 # load in the form data from the incoming request
