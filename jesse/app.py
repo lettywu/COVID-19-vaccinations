@@ -14,6 +14,10 @@ app = Flask('BestVaccDist')
 def home():
     return render_template('index.html')
 
+@app.route('/covid_map')
+def covid_map():
+    return render_template('covid_map.html')
+
 # route 5: accept the form submission and do something fancy with it
 # load in the form data from the incoming request
 # manipulate data into a format that we pass to our model
