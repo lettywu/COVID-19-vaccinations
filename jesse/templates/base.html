@@ -4,9 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
 
   <title>{% block title %} {% endblock %}</title>
   </head>
@@ -17,36 +18,35 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 	<ul class="navbar-nav">
-		<li class="nav-item">
-			<a class="nav-link" href="#">Intro</a>
+		<li>
+			<a class="nav-link" href="intro">Intro</a>
 		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Data Cleaning</a>
+		<li>
+			<a class="nav-link" href="data_cleaning">Data Cleaning</a>
 		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">EDA</a>
+		<li>
+			<a class="nav-link" href="EDA">EDA</a>
 		</li>
-		<li class="nav-item">
+		<li>
 			<a class="nav-link" href="#">Modeling</a>
 		</li>
-		<li class="nav-item">
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Maps
 			<span class="caret"></span></a>
 			<ul class="dropdown-menu">
 				<li><a href="#">Hopital Map</a></li>
-				<li><a href="covid_map">Predcited COVID Cases Map</a></li>
+				<li><a href="map_page">Predcited COVID Cases Map</a></li>
 			</ul>
 		</li>
-		<li class="nav-item">
+		<li>
 			<a class="nav-link" href="#">Vaccine Distribution Table</a>
 		</li>
 
-		<li class="nav-item">
+		<li>
 			<a class="nav-link" href="#">Conclusions</a>
 		</li>
 
-		<li class="nav-item">
+		<li>
 			<a class="nav-link" href="#">Further Steps</a>
 		</li>
 		</li>
@@ -55,6 +55,9 @@
     <div class="container">
         {% block content %} {% endblock %}
     </div>
+
+    	{% block body %} {% endblock %}
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
