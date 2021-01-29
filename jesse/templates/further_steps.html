@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<h1> Further Steps </h1>
+<br>
+<p>With more time, here are some further steps we would like to take. Perhaps this could even become a capstone project for someone &#128513;</p>
+<br>
+<ul>
+	<li>Create an ETL pipeline that grabs new case data everyday and reruns our time series prediction models so vaccines can be allocated more dynamically</li>
+	<li>Get more data about transmission rates, lockdown protocols, more detailed demographics, and vaccine administration per county.</li>
+	<li>Run grid searches on our neural network topology to find a more ideal model that can predict for large swings in COVID-19 cases.</li>
+	<li>Figure out a way to feed more than one feature into our LSTM model to make it more robust and better at predicting future COVID-19 cases.</li>
+	<li>Create a new COVID-19 vaccine distribution strategy that prioritizes giving vaccines to people that are more likely to spread the disease or are at higher risk of death, rather than just healthcare workers and people of old age.</li>
+</ul>
+
+{% endblock %}
+
