@@ -45,6 +45,10 @@ Two or more patients with COVID-19 are discovered to be linked, and the linkage 
 # Modelling-Strategy
 [(Back to top)](#table-of-contents)
 
+Below data set was used to analyse the resource allocation problem:
+
+For Predicting Vaccine allocation across county we followed the below procedure: 
+
 
 
 # Next-Steps
