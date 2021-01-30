@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+  <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ url_for('home')}}">COVID-19 Vaccine Distribution</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+	<ul class="navbar-nav">
+		<li>
+			<a class="nav-link" href="intro">Intro</a>
+		</li>
+		<li>
+			<a class="nav-link" href="data_cleaning">Data Cleaning</a>
+		</li>
+		<li>
+			<a class="nav-link" href="EDA">EDA</a>
+		</li>
+		<li>
+			<a class="nav-link" href="Modeling">Modeling</a>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Maps
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="map_tutorial">Map Tutorial</a></li>
+				<li><a href="map_page">Predicted COVID Cases Map</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nav-link" href="get_predictions">Get Predictions</a>
+		<li>
+			<a class="nav-link" href="vaccine_distribution_table">Vaccine Distribution Table</a>
+		</li>
+
+		<li>
+			<a class="nav-link" href="conclusions">Conclusion</a>
+		</li>
+
+		<li>
+			<a class="nav-link" href="further_steps">Further Steps</a>
+		</li>
+		</li>
+	</ul>
+    </nav>
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    	{% block map %} {% endblock %}
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+    
+    <script type="text/javascript">
+       $(document).ready(function() {
+       $('#vaccine').DataTable();
+    } );
+    </script>
+  </body>
+</html>

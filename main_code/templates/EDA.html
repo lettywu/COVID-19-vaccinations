@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<h1> EDA and Visualizations </h1>
+<br>
+<p> After cleaning all our data, we moved on to EDA and making visualizations to see what features we can use to generate our model to predict COVID-19 outbreaks. The first thing we decided to look at was the vaccine distribution and adminstration per state to visualize our problem statement. Below we can see that distribution from the US government to individual states is based on population other than for Alaska. </p>
+<br>
+<img src="./static/imgs/total_allocation_per_population_state.png" class="mx-auto d-block">
+<br>
+<p> Here is a visual that where we have the total vaccinations for the top 10 states and their populations on top. </p>
+<img src="./static/imgs/first_allocation_top_10_states.png" class="mx-auto d-block">
+<br>
+<p> Next we wanted to see how many vaccines are actually being administered to people once the state obtains the vaccines. Here we see that for California, less that half of the vaccines have been administered to people, while Michgan has administered 70% of their vaccines.</p>
+<br>
+<img src="./static/imgs/vacc_allocation_admin_state.png" class="mx-auto d-block">
+<br>
+<p> To see why the administration of vaccines was so slow, we looked at the number of people that had received a vaccine from January 16th. Interestingly, from January 16th to January 20th we don't see any change, and then we see a sudden spike afterwards. One thing that is concerning though is the number of people that have received their 2nd vaccine is lower than expected.</p>
+<br>
+<img src="./static/imgs/people_received_vaccines_total.png" class="mx-auto d-block">
+<br>
+<p>  Afterwards, we looked to see if a survey conducted about mask use in each county was indicative of an area being more susceptable to COVID-19 outberaks. This turned out to not be the case as the discrepency between counties was very small and wasn't helpful. As many outbreak statistics are based on a per 100k population basis, we decided to scale our data the same way. Below are some plots showing the 7 day rolling average of newly confirmed cases and new deaths per 100k population. </p>
+<br>
+<img src="./static/imgs/7_day_newly_confirmed_all_counties.png" class="mx-auto d-block">
+<br>
+<img src="./static/imgs/7_day_newly_death_all_counties.png" class="mx-auto d-block">
+<br>
+<p> We then moved on to looking at the hospital data and seeing how similar it was to the cases data. While the data doesn't line up perfectly with the cases data, it still follows a similar trend which we expected as even though someone might get COVID-19 they don't neccessarily have to stay at the hospital if their symptoms are minor. Below are charts showing the hospital data for each county, based on the total number of available hospital beds as well as the total number of available ICU beds.</p>
+<img src="./static/imgs/7_day_all_counties_hospitalized.png" class="mx-auto d-block">
+<br>
+<img src="./static/imgs/7_day_ICU_all_counties.png" class="mx-auto d-block">
+<br>
+<p> Finally, we looked at the total number of cases based on population density in each county and plotted a map of it as shown below </p>
+<br>
+<img src="./static/imgs/covid_density_by_population.png" class="mx-auto d-block">
+<br>
+<p> If you want a deeper dive into our EDA process you can check out the notebooks below. </p>
+<br>
+<a href="case-mask-eda" target="_blank">Cases and Mask Use EDA</a>
+<br>
+<a href="hospital-beds-eda" target="_blank">Hospital Beds EDA</a>
+<br>
+<a href="vaccine-state-eda" target="_blank">Vaccination Distribution by State EDA</a>
+<br>
+<a href="vaccine-administration-california" target="_blank">Vaccine Administration in California EDA</a>
+<br>
+<a href="covid-density-eda" target="_blank">COVID-19 Density by County EDA</a>
+<br>
+<br>
+
+{% endblock %}
