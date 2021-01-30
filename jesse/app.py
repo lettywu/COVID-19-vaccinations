@@ -20,6 +20,26 @@ def home():
 def intro():
     return render_template('intro.html')
 
+@app.route('/data-cleaning-main')
+def data_cleaning_main():
+    return render_template('1_Data_Cleaning.html')
+
+@app.route('/eda-main')
+def eda_main():
+    return render_template('2_EDA.html')
+
+@app.route('/modeling-main')
+def modeling_main():
+    return render_template('3_Modeling.html')
+
+@app.route('/folium-main')
+def folium_main():
+    return render_template('4_Folium.html')
+
+@app.route('/prediction-conclusion-main')
+def prediction_conclusion_main():
+    return render_template('5_Predictions_and_Conclusions.html')
+
 @app.route('/data_cleaning')
 def data_cleaning():
     return render_template('data_cleaning.html')

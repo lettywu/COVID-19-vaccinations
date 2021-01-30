@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<h1> How to Create Maps Using GeoPandas and Folium </h1>
+<br>
+<p> GeoPandas and Folium are two popular python libraries for creating plots of geospatial data. The great advantage of GeoPandas is the simplicity of use as all you need is a ShapeFile of the area you're interested in and you can start creating plots. Another great advantage is that GeoPandas is very similar to Pandas so it is very easy to use for those familiar with the library. Everything is stored in Series of DataFrames and manipulating them is the exact same as it is in Pandas. One disadvantage of GeoPandas though is that your plots are on a fixed scale and is static with no interactability. That's where Folium comes in. Folium is great in that it creates Leaflet style maps where you can zoom in or out on a map depending on how detailed you want things to be. Using Folium does require converting things to GeoJSON format though, which is slightly more difficult than working with Pandas Series in DataFrames. However the interactability through different tools is Folium is amazing. For this project we used the GeoJSON Tooltip in Folium to display the names of counties when you hover over them, as well as the TimestampedGeoJson plugin to display the change in COVID-19 Cases in each county over time. </p>
+<br>
+<p> Generally all government websites have shape files for their respective boundaries. We got the shapefile for individual counties in California from here: 
+<br>
+<a href="https://data.ca.gov/dataset/ca-geographic-boundaries/resource/b0007416-a325-4777-9295-368ea6b710e6" target = "_blank">https://data.ca.gov/dataset/ca-geographic-boundaries/resource/b0007416-a325-4777-9295-368ea6b710e6</a>
+<br> 
+<p>You can see sample notebooks for creating maps in GeoPandas and Folium below: </p>
+<br>
+<a href="covid-density-eda" target="_blank">Using GeoPandas to create a Density Map</a>
+<br>
+<a href="folium-time-series" target="_blank">Using Folium to Display Time Series COVID-19 Data</a>
+
+{% endblock %}

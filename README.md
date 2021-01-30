@@ -64,6 +64,4 @@ The Primary Source for Covid Data comes from California CoVid website. The follo
 
 Citations:
 https://covid.cdc.gov/covid-data-tracker/#vaccinations
-https://public.tableau.com/views/COVID-19CasesDashboard_15931020425010/Cases?:embed=y&:showVizHome=no
-
-  
+https://public.tableau.com/views/COVID-19CasesDashboard_15931020425010/Cases?:embed=y&:showVizHome=no 
